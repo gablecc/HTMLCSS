@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>image zoom galery</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		body{background-color:lightgrey;}
+		div img {width:200px}
+		#insideframe {border:2px solid black;
+		background-color:black;}
+		
+		div p{
+		font-size:16px;
+		color:white;
+		font-weight:bold;
+		font-family:sans-serif;
+		padding-left:15px
+		}
+		
+		p > p{
+		font-size:11px;
+		color:white;
+		font-family:sans-serif;
+		
+		}
+		
+		#paper{
+		background-color:#E0E0E0;
+		margin:75px auto;
+		width:1200px;
+		padding:20px;
+		display:inline-block;
+		box-shadow:4px 4px 30px black;
+		}
+		
+		.frame {
+		color:white;
+		background-color:black;
+		display:inline-block;
+		vertical-align:top;
+		border:4px solid black;
+		border-radius:5px;
+		width:360px;
+		height:370px;
+		box-shadow:1px 1px 10px black;
+		overflow:hidden;
+		margin-left:25px;
+		margin-top:25px;
+		}
+		
+		.insideframe{
+		padding-top:10px;
+		}
+		
+		.imgframe{
+		padding-left:30px;
+		width:300px;
+		height:200px;
+		margin-bottom:20px;
+		overflow:hidden;
+		}
+		
+		div img{
+		width:100%;
+		transition:transform 1s ease-in-out;
+		}
+		
+		div img:hover{
+		transform:scale (1.8,1.8);
+		transition:transform 2s;
+		ease-in-out;
+		}
+		
+		
+		
+	</style>
+
+
+</head>
+<body>
+
+<div id="paper">
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="gacka.jpg" /></div>
+		<p>Rijeka Gacka</p>
+		<p>Gacka je rijeka ponornica duga 61 km sa svojim pritokama, a izvire ispod Godače i Venca u Sincu.</p>
+	</div>
+</div>
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="mreznica.jpg" /></div>
+		<p>Rijeka Mrežnica</p>
+		<p>Mrežnica je rijeka u Hrvatskoj, lijevi pritok rijeke Korane. Izvire kod Slunja u Kordunu, a ulijeva se u Koranu kod Karlovca.</p>
+	</div>
+</div>
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="korana.jpg" /></div>
+		<p>Rijeka Korana</p>
+		<p>Korana je rijeka u Hrvatskoj i BiH, desna pritoka rijeke Kupe.</p>
+	</div>
+</div>
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="kupa.jpg" /></div>
+		<p>Rijeka Kupa</p>
+		<p>Kupa (slovenski Kolpa) je rijeka čiji je izvor i ušće u Hrvatskoj, a dijelom svoga toka čini granicu sa Slovenijom.</p>
+	</div>
+</div>
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="dobra.jpg" /></div>
+		<p>Rijeka Dobra</p>
+		<p>Dobra je hrvatska rijeka ponornica. Izvire iz dva izvora: kod Bukova vrha i kod Skrada.</p>
+	</div>
+</div>
+<div class="frame">
+	<div class="insideframe">
+		<div class="imgframe"><img src="una.jpg" /></div>
+		<p>Rijeka Una</p>
+		<p>Una je na izvoru planinska rijeka, a kako ide prema ušću, postaje ravničarska rijeka.</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

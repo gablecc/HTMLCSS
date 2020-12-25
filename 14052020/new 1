@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+	char unos[100];
+	
+	scanf(unos);
+	
+	char ch[2];
+	switch(ch){
+		case 'l':
+			printf("l");
+		
+	}
+	scanf(ch);
+	
+	return 0;
+}

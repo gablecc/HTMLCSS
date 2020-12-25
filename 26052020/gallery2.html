@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link href="main2.css" rel="stylesheet" type="text/css" />
+<style>
+	#galerija{
+		
+		margin:100px auto;
+		width:535px;
+		height:330px;
+		border:1px solid black;
+		box-shadow: 0px 0px 5px 3px gray;
+		border-radius:10px;
+		position:relative;
+		overflow:hidden;
+	}
+	
+	#galerija .item{
+		width:535px;
+		height:330px;
+		display:inline-block;
+		position:absolute;
+		left:535px;
+		top:0px;
+		animation:animacija;
+		animation-iteration-count:infinite;
+		animation-delay:0s;
+		animation-duration:3s;
+		animation-timing-function:linear;
+	}
+	
+	#galerija .item:nth-of-type(2){
+		animation-delay:2s;
+	
+	}
+	
+	#galerija .item:nth-of-type(3){
+		animation-delay:4s;
+	
+	}
+	
+	#galerija .item:nth-of-type(4){
+		animation-delay:6s;
+	
+	}
+	
+	#galerija .item:nth-of-type(5){
+		animation-delay:8s;
+	
+	}
+	
+	#galerija .item:nth-of-type(6){
+		animation-delay:10s;
+	
+	}
+	
+	#galerija .item div{
+	font-size:50px;
+		color:white;
+		font-family:sans-serif;
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:1;
+		text-shadow:-4px -4px 0px gray, 4px 4px 0px
+		black;
+		transform:rotate(-30deg);
+		margin-left:40px;
+		margin-top:40px;
+	}
+	
+	#galerija .item img{
+		width:535px;
+		height:330px;
+		width:100%;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	
+	@keyframes animacija{
+		0%{
+			transform: translate(0px);
+		}
+		33.333%{
+			transform:translate(-535px);
+		}
+		66.666%{
+			transform:translate(-535px);
+		}
+		100%{
+			transform:translate(-1070px);
+		}
+	}
+</style>
+
+
+</head>
+
+<body>
+<br />
+<div id="galerija">
+	<div class="item">
+		<div>Gacka</div>
+		<img src="gacka.jpg" />
+		
+	</div>
+
+	<div class="item">
+	<div>Mrežnica</div>
+		<img src="mreznica.jpg" />
+		
+	</div>
+	<div class="item">
+		<div>Korana</div>
+		<img src="korana.jpg" />
+		
+	</div>
+	<div class="item">
+		<div>Kupa</div>
+		<img src="kupa.jpg" />
+		
+	</div>
+	<div class="item">
+		<div>Dobra</div>
+		<img src="dobra.jpg" />
+		
+	</div>
+	<div class="item">
+		<div>Una</div>
+		<img src="una.jpg" />
+		
+	</div>
+</div>
+
+</body>
+</html>

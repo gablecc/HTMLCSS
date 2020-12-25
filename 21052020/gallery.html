@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link href="main.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		#galerija{
+		border:2px solid black;
+		border-radius:5px;
+		width:640px;
+		height:480px;
+		position:relative;
+		overflow:hidden;
+		}
+		
+		.preview{
+		width:640px;
+		height:480px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:-1;
+		}
+		
+		.item{
+		width:120px;
+		height:60px;
+		overflow:hidden;
+		
+		}
+		
+		.item p{
+		margin:-20px 0px 0px 0px;
+		background-color:blue;
+		color:white;
+		z-index:1;
+		}
+		
+		.imgframe{
+			border:2px solid white;
+			width:128px;
+		height:60px;
+		overflow:hidden;
+		}
+		
+		.imgframe img{
+		width:100%;
+		z-index:-1;
+		}
+		
+		.bigimg{
+		display:none;
+		width:640px;
+		height:480px;
+		top:0px;
+		left:0px;
+		position:absolute;
+		z-index:-1;
+		}
+		
+		.bigimg img{
+		
+		height:100%;
+		}
+		
+		
+		.item:hover .bigimg{
+		display:block;
+		}
+		
+		
+		
+		
+	</style>
+
+</head>
+<body>
+<br />
+<div id="galerija">
+	<div class="preview"></div>
+	<div class="item">
+		<div class="imgframe"><img src="gacka.jpg" /></div>
+		<p>Rijeka Gacka</p>
+		<div class="bigimg"><img src="gacka.jpg" /></div>
+	</div>
+
+	<div class="item">
+		<div class="imgframe"><img src="mreznica.jpg" /></div>
+		<p>Rijeka Mrežnica</p>
+		<div class="bigimg"><img src="mreznica.jpg" /></div>
+	</div>
+	<div class="item">
+		<div class="imgframe"><img src="korana.jpg" /></div>
+		<p>Rijeka Korana</p>
+		<div class="bigimg"><img src="korana.jpg" /></div>
+	</div>
+	<div class="item">
+		<div class="imgframe"><img src="kupa.jpg" /></div>
+		<p>Rijeka Kupa</p>
+		<div class="bigimg"><img src="kupa.jpg" /></div>
+	</div>
+	<div class="item">
+		<div class="imgframe"><img src="dobra.jpg" /></div>
+		<p>Rijeka Dobra</p>
+		<div class="bigimg"><img src="dobra.jpg" /></div>
+	</div>
+	<div class="item">
+		<div class="imgframe"><img src="una.jpg" /></div>
+		<p>Rijeka Una</p>
+		<div class="bigimg"><img src="una.jpg" /></div>
+	</div>
+</div>
+
+</body>
+</html>
